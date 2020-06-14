@@ -18,7 +18,7 @@ module.exports={
           return message.channel.send(
             `That is not a user in the server! Try again!`
           );
-        let Reason = message.content.split(`!kick ${User.id} `);
+        let Reason = message.content.split(`!kick ${User.name} `);
         if (!args[1])
           return message.channel.send(
             `Please specify a reason! You can't kick someone with out a reason, can you?`
